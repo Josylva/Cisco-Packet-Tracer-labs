@@ -53,10 +53,41 @@ PC2  ---> FastEthernet 0/3
 Server ---> FastEthernet 0/4
 
 -------------------------------
-DHCP IP ADDRESS ASSIGNMENT
+DHCP Server 
+-------------------------------
+Navigate to the server that was configured to act as the DHCP server for the network.
+
+Step 1 — Configure Server IP Address
+
+Click on the server device.
+
+Navigate to the Config tab.
+
+Select FastEthernet0.
+
+Assign a static IPv4 address to the server.
+
+Example configuration: 192.168.1.15
+
+
+Navigate to the services menu and turn on the DHCP service, Input start IP address and subnet mask.
+
+<img width="460" height="380" alt="image" src="https://github.com/user-attachments/assets/9dcd423c-3418-476d-b2b8-eb26dfef3359" />
+
+
+-------------------------------
+REQUESTING IP ADDRESS USING CMD
 -------------------------------
 
-After requesting IP addresses from the DHCP server, the following addresses were assigned automatically:
+To request an IP address dynamically from the DHCP server, the following command was executed from the Command Prompt on each PC:
+
+```cmd
+ipconfig /renew
+```
+
+This command forces the client computer to send a DHCP request to the server and obtain a valid IP address automatically.
+
+IP address assigned are as follows:
 
 PC0
 
@@ -75,18 +106,6 @@ PC2
 Interface: FastEthernet 0/3
 
 Assigned IP Address: 192.168.1.10
-
--------------------------------
-REQUESTING IP ADDRESS USING CMD
--------------------------------
-
-To request an IP address dynamically from the DHCP server, the following command was executed from the Command Prompt on each PC:
-
-```cmd
-ipconfig /renew
-```
-
-This command forces the client computer to send a DHCP request to the server and obtain a valid IP address automatically.
 
 <img width="460" height="380" alt="image" src="https://github.com/user-attachments/assets/359f014c-e844-43e4-9b41-7f762dbe0a9c" />
 
