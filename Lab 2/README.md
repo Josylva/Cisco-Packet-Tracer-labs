@@ -38,10 +38,6 @@ The objectives of this lab are to:
 
 ---
 
-# Physical Connections
-
- Copper Straight-Through cables.
-
 # Network Topology
 
 The network consists of:
@@ -170,8 +166,11 @@ Use the Command Prompt on both PCs to test connectivity.
 
 Example:
 
+```cmd
+
 ping 172.16.1.15
 
+```
 If configured correctly, replies from the FTP server should be received successfully.
 
 Step 5 - Configure FTP Services
@@ -227,16 +226,25 @@ Open:
 Desktop > Command Prompt
 Connect to the FTP server:
 
+```cmd
+
 ftp 172.16.1.15
+
+```
+
 
 Enter the username and password for the Sammy account.
 
 Upload the file using:
 
-`put item.txt`
+```cmd
 
+put item.txt
+
+```
 output:
 
+```
 Writing file items.txt to 172.16.1.15:
 
 File transfer in progress...
@@ -245,6 +253,7 @@ File transfer in progress...
 
 1020 bytes copied in 0.043 secs
 
+```
 Step 9 - Retrieve File Using Jane PC
 
 <img width="400" height="340" alt="image" src="https://github.com/user-attachments/assets/17691713-d74a-4778-8495-e32a319cafc4" />
@@ -254,7 +263,11 @@ Navigate to Desktop > Command Prompt
 
 Connect to the FTP server:
 
+```cmd
+
 ftp 172.16.1.15
+
+```
 Login using Jane's credentials.
 
 Download the file using:
@@ -262,6 +275,7 @@ Download the file using:
 get items.txt
 output:
 
+``` cmd
 Reading file items.txt from 172.16.1.15:
 
 File transfer in progress...
@@ -270,6 +284,7 @@ File transfer in progress...
 
 1020 bytes copied in 0.01 secs
 
+```
 Step 10 - Verify Downloaded File
 
 Exit the command prompt.
