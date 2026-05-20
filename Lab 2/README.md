@@ -1,15 +1,66 @@
+# FTP Server Configuration
+
+## Introduction
+
+This lab focuses on configuring an FTP server within a local area network using Cisco Packet Tracer. The project demonstrates how users can securely upload and retrieve files from a centralized file server.
+
+The simulation includes two client computers, one DNS server, one FTP server, and a switch used for connectivity.
+Objectives
+
+The objectives of this lab are to:
+
+- Configure an FTP server
+
+- Configure DNS services
+
+- Assign static IP addresses
+
+- Create FTP user accounts
+
+- Upload files to the FTP server
+- Retrieve files from the FTP server
+
+- Verify network communication using ping
+
+  ---
+
+# Network Components
+
+| Device | Quantity |
+
+| PCs | 2 |
+
+| Switch | 1 |
+
+| DNS Server | 1 |
+
+| FTP Server | 1 |
+
+---
+
+# Physical Connections
+
+ Copper Straight-Through cables.
+
 # Network Topology
 
 The network consists of:
 
 - 2 Personal Computers
+
 - 1 Switch
+
 - 1 DNS Server
+
 - 1 FTP Server
 
 All devices were connected using Copper Straight-Through cables.
 
 ---
+
+<img width="462" height="390" alt="image" src="https://github.com/user-attachments/assets/f6bc7680-8690-4674-a131-fc343db9758c" />
+
+
 
 # Devices Used
 
@@ -32,8 +83,11 @@ All devices were connected using Copper Straight-Through cables.
 | Device | Switch Port |
 
 | Jane PC | FastEthernet 0/1 |
+
 | Sammy PC | FastEthernet 0/2 |
+
 | DNS Server | FastEthernet 0/3 |
+
 | FTP Server | FastEthernet 0/4 |
 
 ---
@@ -67,6 +121,7 @@ Subnet Mask: 255.255.0.0
 DNS Server: 172.16.1.17
 
 Step 2 - Configure the FTP Server
+
 Open the FTP Server.
 
 Navigate to:
@@ -149,6 +204,9 @@ Permissions enabled:
 
 Read, Write, Delete, Rename
 
+<img width="460" height="390" alt="image" src="https://github.com/user-attachments/assets/52f0b637-4b98-4ed5-9905-2b9c128b5f12" />
+
+
 Step 7 - Create a File From Sammy PC
 
 Open Sammy PC.
@@ -175,15 +233,21 @@ Enter the username and password for the Sammy account.
 
 Upload the file using:
 
-put items.txt
+`put item.txt`
 
 output:
 
 Writing file items.txt to 172.16.1.15:
+
 File transfer in progress...
+
 [Transfer complete - 1020 bytes]
+
 1020 bytes copied in 0.043 secs
+
 Step 9 - Retrieve File Using Jane PC
+
+<img width="400" height="340" alt="image" src="https://github.com/user-attachments/assets/17691713-d74a-4778-8495-e32a319cafc4" />
 
 Open Jane PC.
 Navigate to Desktop > Command Prompt
@@ -219,4 +283,5 @@ File > Open
 Select:
 
 items.txt
+
 The transferred file should now be available on Jane PC.
