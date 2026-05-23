@@ -32,4 +32,13 @@ The FTP projects focus on file sharing and centralized storage within a network.
 
 The projects also explore basic file management and network communication using FTP services.
 
+## SMTP (Simple Mail Transfer Protocol)
+The SMTP projects focus on email communication and message delivery within a network. These labs demonstrate how devices can:
+
+- Send emails from client devices to a mail server
+- Receive and reply messages between servers
+- Authenticate users using email accounts and passwords
+- Enable communication between users across a network
+
+The projects also explore basic email configuration, message transmission, and network communication using SMTP services.
 
