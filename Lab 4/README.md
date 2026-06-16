@@ -128,6 +128,10 @@ Enable the DNS service and create the following A Records.
 
 These records allow users to access websites using domain names instead of IP addresses.
 
+
+<img width="490" height="320" alt="image" src="https://github.com/user-attachments/assets/52531b74-95f6-41ef-be8e-92694597de42" />
+
+
 ---
 
 # Step 5 - Configure the Google Web Server
