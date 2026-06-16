@@ -42,3 +42,16 @@ The SMTP projects focus on email communication and message delivery within a net
 
 The projects also explore basic email configuration, message transmission, and network communication using SMTP services.
 
+## DNS and HTTP Web Hosting
+
+The DNS and HTTP projects demonstrate how domain name resolution and web hosting services work together within a network environment. These labs show how users can access websites using domain names instead of IP addresses through the use of DNS records and web servers.
+
+The projects demonstrate how to:
+
+- Configure DNS servers for name resolution
+- Create DNS A Records that map domain names to IP addresses
+- Configure HTTP web servers to host websites
+- Enable clients to access websites through web browsers
+- Integrate DHCP, DNS, and HTTP services within the same network
+
+These labs provide practical experience with core internet technologies and illustrate how users access websites such as Google and Yahoo through domain names while the DNS server translates those names into the appropriate IP addresses behind the scenes.
