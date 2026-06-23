@@ -55,3 +55,20 @@ The projects demonstrate how to:
 - Integrate DHCP, DNS, and HTTP services within the same network
 
 These labs provide practical experience with core internet technologies and illustrate how users access websites such as Google and Yahoo through domain names while the DNS server translates those names into the appropriate IP addresses behind the scenes.
+
+
+## Office Inter-Department Routing and Subnetting
+
+The Inter-Department Routing projects demonstrate how routers enable communication between multiple network segments within an organization. These labs focus on dividing a network into separate subnets and using a router to facilitate communication between departments while maintaining organized network boundaries.
+
+The projects demonstrate how to:
+
+- Design and implement departmental network segmentation
+- Perform subnetting calculations using CIDR notation
+- Configure router interfaces with IP addressing
+- Assign static IP addresses to end devices and printers
+- Configure default gateways for inter-network communication
+- Enable communication between devices located on different subnets
+- Verify routing functionality using ICMP connectivity tests
+
+These labs provide practical experience with IP addressing, subnetting, router configuration, and inter-network communication. They illustrate how organizations separate departments such as Sales and Human Resources into different networks while still allowing secure and efficient communication through a routing device.
