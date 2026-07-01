@@ -87,6 +87,9 @@ Configure:
 Create DHCP allocation for client devices.
 
 ---
+<img width="502" height="338" alt="image" src="https://github.com/user-attachments/assets/0c648d5a-0765-40f4-816b-9c04338aae38" />
+
+---
 
 # Step 3 – Request DHCP Address
 
@@ -158,6 +161,10 @@ The server will act as both:
 - Outgoing Mail Server (SMTP)
 
 - Incoming Mail Server (POP3)
+---
+
+<img width="680" height="490" alt="image" src="https://github.com/user-attachments/assets/c541bf67-1ea4-4c30-bc91-1ef7773db8d5" />
+
 
 ---
 
@@ -183,6 +190,9 @@ Configure each user.
 | Password | jane123 |
 
 ---
+<img width="518" height="500" alt="Screenshot 2026-07-01 205724" src="https://github.com/user-attachments/assets/deb13e91-f3b2-411f-a878-867cce5a1735" />
+
+---
 
 ## Paul Configuration
 
@@ -196,6 +206,9 @@ Configure each user.
 | Password | paul123 |
 
 ---
+<img width="503" height="500" alt="Paul" src="https://github.com/user-attachments/assets/8a6beedf-76ad-4082-a143-dd9abf2695e1" />
+
+---
 
 ## Sammy Configuration
 
@@ -207,6 +220,12 @@ Configure each user.
 | Outgoing Mail Server | 192.168.1.15 |
 | Username | sammy |
 | Password | sammy123 |
+
+
+---
+<img width="509" height="503" alt="Sammy" src="https://github.com/user-attachments/assets/80bb0bcd-1400-4fdd-82cd-c4bd9e7928de" />
+
+---
 
 > Note: The server IP (`192.168.1.15`) is used as both Incoming and Outgoing Mail Server.
 
@@ -251,7 +270,9 @@ Paul
 Click **Send**.
 
 ---
+<img width="680" height="469" alt="image" src="https://github.com/user-attachments/assets/25af5e21-a972-4d16-a847-2f1c255684e1" />
 
+---
 ## Test 2 – Sammy Receives and Sends Update Request
 
 Navigate to:
@@ -265,7 +286,10 @@ Click:
 ```text
 Receive
 ```
+---
+<img width="506" height="499" alt="image" src="https://github.com/user-attachments/assets/ff089e04-371b-4672-99de-f85d57c6d08f" />
 
+---
 Confirm email is received.
 
 Compose another email.
@@ -295,7 +319,8 @@ Sammy
 
 Click **Send**.
 
-<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/afd5de07-c969-41f6-85a3-52e15ef7d0c3" />
+<img width="506" height="497" alt="image" src="https://github.com/user-attachments/assets/b73b3311-4f49-4870-95d8-147e8391c987" />
+
 
 
 ---
