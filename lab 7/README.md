@@ -276,6 +276,78 @@ Router(config-router)# network 192.168.7.0 255.255.255.0 area 0
 Router(config-router)# network 192.168.6.0 255.255.255.0 area 0
 Router(config-router)# do write
 ```
+### Floor 2 Router
+
+```bash
+Router(config)# interface gig0/0.30
+Router(config-subif)# encapsulation dot1Q 30
+Router(config-subif)# ip address 192.168.3.1 255.255.255.0
+
+Router(config)# interface gig0/0.40
+Router(config-subif)# encapsulation dot1Q 40
+Router(config-subif)# ip address 192.168.4.1 255.255.255.0
+
+Router(config)# interface gig0/0.50
+Router(config-subif)# encapsulation dot1Q 50
+Router(config-subif)# ip address 192.168.5.1 255.255.255.0
+
+! DHCP Pools
+Router(config)# service dhcp
+
+Router(config)# ip dhcp pool Sales
+Router(dhcp-config)# network 192.168.3.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.3.1
+Router(dhcp-config)# dns-server 192.168.3.1
+
+Router(config)# ip dhcp pool HR
+Router(dhcp-config)# network 192.168.4.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.4.1
+Router(dhcp-config)# dns-server 192.168.4.1
+
+Router(config)# ip dhcp pool Finance
+Router(dhcp-config)# network 192.168.5.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.5.1
+Router(dhcp-config)# dns-server 192.168.5.1
+
+Router(config)# do write
+```
+
+---
+
+### Floor 1 Router
+
+```bash
+Router(config)# interface gig0/0.60
+Router(config-subif)# encapsulation dot1Q 60
+Router(config-subif)# ip address 192.168.6.1 255.255.255.0
+
+Router(config)# interface gig0/0.70
+Router(config-subif)# encapsulation dot1Q 70
+Router(config-subif)# ip address 192.168.7.1 255.255.255.0
+
+Router(config)# interface gig0/0.80
+Router(config-subif)# encapsulation dot1Q 80
+Router(config-subif)# ip address 192.168.8.1 255.255.255.0
+
+! DHCP Pools
+Router(config)# service dhcp
+
+Router(config)# ip dhcp pool Logistics
+Router(dhcp-config)# network 192.168.6.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.6.1
+Router(dhcp-config)# dns-server 192.168.6.1
+
+Router(config)# ip dhcp pool Store
+Router(dhcp-config)# network 192.168.7.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.7.1
+Router(dhcp-config)# dns-server 192.168.7.1
+
+Router(config)# ip dhcp pool Reception
+Router(dhcp-config)# network 192.168.8.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.8.1
+Router(dhcp-config)# dns-server 192.168.8.1
+
+Router(config)# do write
 
 ## Floor 2 Router
 
