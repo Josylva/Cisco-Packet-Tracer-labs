@@ -265,17 +265,6 @@ Router(dhcp-config)# dns-server 192.168.1.1
 Router(config)# do write
 ```
 
-# OSPF Configuration
-## Floor 1 Router
-```bash
-Router(config)# router ospf 10
-Router(config-router)# network 10.10.10.4 255.255.255.252 area 0
-Router(config-router)# network 10.10.10.8 255.255.255.252 area 0
-Router(config-router)# network 192.168.8.0 255.255.255.0 area 0
-Router(config-router)# network 192.168.7.0 255.255.255.0 area 0
-Router(config-router)# network 192.168.6.0 255.255.255.0 area 0
-Router(config-router)# do write
-```
 ### Floor 2 Router
 
 ```bash
@@ -348,6 +337,19 @@ Router(dhcp-config)# default-router 192.168.8.1
 Router(dhcp-config)# dns-server 192.168.8.1
 
 Router(config)# do write
+```
+
+# OSPF Configuration
+## Floor 1 Router
+```bash
+Router(config)# router ospf 10
+Router(config-router)# network 10.10.10.4 255.255.255.252 area 0
+Router(config-router)# network 10.10.10.8 255.255.255.252 area 0
+Router(config-router)# network 192.168.8.0 255.255.255.0 area 0
+Router(config-router)# network 192.168.7.0 255.255.255.0 area 0
+Router(config-router)# network 192.168.6.0 255.255.255.0 area 0
+Router(config-router)# do write
+```
 
 ## Floor 2 Router
 
