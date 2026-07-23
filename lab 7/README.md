@@ -27,7 +27,7 @@ This project demonstrates the implementation of network security within a multi-
 
 The hotel network consists of three interconnected floors.
 
-## Floor 1
+## Floor 3
 
 Departments
 
@@ -67,7 +67,7 @@ Equipment
 
 ---
 
-## Floor 3
+## Floor 1
 
 Departments
 
