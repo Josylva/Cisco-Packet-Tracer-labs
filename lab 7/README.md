@@ -27,7 +27,7 @@ This project demonstrates the implementation of network security within a multi-
 
 The hotel network consists of three interconnected floors.
 
-## Floor 3
+## Floor 1
 
 Departments
 
@@ -67,7 +67,7 @@ Equipment
 
 ---
 
-## Floor 1
+## Floor 3
 
 Departments
 
@@ -104,9 +104,9 @@ Equipment
 
 | Floor | Departments | VLAN | Network IP |
 |-------|-------------|------|-------------|
-| **1** | IT, Admin | VLAN 10, VLAN 20 | 192.168.1.0/24, 192.168.2.0/24 |
+| **3** | IT, Admin | VLAN 10, VLAN 20 | 192.168.1.0/24, 192.168.2.0/24 |
 | **2** | Sales, HR, Finance | VLAN 30, VLAN 40, VLAN 50 | 192.168.3.0/24, 192.168.4.0/24, 192.168.5.0/24 |
-| **3** | Reception, Store, Logistics | VLAN 80, VLAN 70, VLAN 60 | 192.168.8.0/24, 192.168.7.0/24, 192.168.6.0/24 |
+| **1** | Reception, Store, Logistics | VLAN 80, VLAN 70, VLAN 60 | 192.168.8.0/24, 192.168.7.0/24, 192.168.6.0/24 |
 
 > Each department has atleast **1 PC + 1 Printer**.
 
