@@ -395,6 +395,8 @@ Router(config-router)# do write
   - 1 Laptop
   - 2 Smartphones
 
+Important Note: Make sure your Access Point connection cable is among one of the configured VLANs in each floor switch.
+
 ---
 # Configure SSH on the Routers
 
